@@ -1,0 +1,152 @@
+.login-content {
+  height: 455px;
+  padding-top: 67px;
+  background: url(imgs/bizhi-6.jpg) no-repeat center;
+  background-size: 100% 100%;
+}
+
+.login-content .content-title {
+  margin-top: 75px;
+}
+
+.content-title {
+  float: left;
+  overflow: hidden;
+}
+
+.content-title .logo-red {
+  float: left;
+  display: block;
+  height: 90px;
+  width: 90px;
+  margin-left: 40px;
+  background: url(./imgs/1.gif) no-repeat center;
+}
+
+.content-title p {
+  float: left;
+  padding-left: 10px;
+  font-size: 35px;
+  line-height: 90px;
+  color: #fff;
+}
+
+
+
+.login-content-box {
+  float: right;
+}
+
+.login-content-box .login-box-title {
+  height: 46px;
+  width: 436px;
+  font-size: 18px;
+  color: #fff;
+  line-height: 46px;
+  text-align: center;
+  font-weight: normal;
+  background-color: #0051ad;
+  margin-bottom: 0;
+}
+
+.login-content-box .login-box-msg {
+  height: 253px;
+  width: 434px;
+  padding-top: 27px;
+  background-color: #fff;
+  border: 1px solid #e5ddd4;
+  border-top: none;
+}
+
+.login-content-box .login-box-msg .login-box-msg-common {
+  margin: 10px auto 10px;
+}
+
+.login-content-box .validate_msg {
+  padding-left: 75px;
+  font-size: 14px;
+  color: #f00;
+}
+
+
+
+
+
+
+.login-box-msg-common {
+  height: 38px;
+  width: 305px;
+  border: 1px solid #eaeaea;
+}
+
+.login-box-msg-common i {
+  display: block;
+  float: left;
+  width: 55px;
+  text-align: center;
+  line-height: 38px;
+  color: #c8c8c8;
+}
+
+.login-box-msg-common input {
+  float: left;
+  height: 30px;
+  padding: 4px 0 4px 15px;
+  border: 0 none;
+  background: #fff!important;
+}
+
+
+
+
+
+
+
+
+
+
+.login-box-msg-tel i {
+  font-size: 36px;
+}
+
+.login-box-msg-pwd i {
+  font-size: 22px;
+}
+
+
+.login-btn-box {
+  position: relative;
+  height: 36px;
+  width: 88px;
+  margin: 0 auto;
+}
+
+.login-btn-box .login-fail {
+  position: absolute;
+  left: 100px;
+  top: 0;
+}
+
+.login-btn-box .login-fail a {
+  display: block;
+  width: 100px;
+  text-align: left;
+  color: #0051ad;
+}
+
+
+
+
+
+
+.btn {
+  display: block;
+  height: 36px;
+  width: 88px;
+  margin: 40px auto 0;
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #ff7200;
+}
