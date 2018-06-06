@@ -2,14 +2,14 @@
   <div id="head" class="hd wrapper-width">
     <div class="main-content-w">
         <ul class="hd-left">
-            <li>您好，欢迎来到饥人谷挖掘机服务平台!</li>
-            <li >
+            <li>您好，欢迎来到溧阳挖掘机服务平台!</li>
+            <li v-if="!isLogin">
                 <a href="login.html">请登录</a>
                 <a href="register.html">注册</a>
             </li>
-            <li >
-                <a href="login.html">手机号，您好！</a>
-                <a href="javascript:;" >退出</a>
+            <li v-else>
+                <a href="login.html">{{mobile}}，您好！</a>
+                <a href="javascript:;" @click="logout">退出</a>
             </li>
         </ul>
         <ul class="hd-right">
@@ -22,8 +22,37 @@
 </template>
 
 <script>
-  // import vm from './top.js'
-  // export default vm
+import {fetch,rap} from 'js/fetch'
+var url={
+  list:'user/getUser.do',
+  logout:'user/logout.do'
+}
+url=rap(url)
+  export default{
+    data(){
+      return{
+        mobile:'123',
+        isLogin:false
+      }
+    },
+    created(){
+      this.getInfo()
+    },
+    methods:{
+      getInfo(){
+        fetch(url.list).then(res=>{
+            this.mobile=res.data.user.mobile
+            this.isLogin=true
+          })
+      },
+      logout(){
+        fetch(url.logout).then(res=>{
+          this.mobile=""
+            this.isLogin=false
+        })
+      }
+    }
+  }
 </script>
 
 <style lang="scss">

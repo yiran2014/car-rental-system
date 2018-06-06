@@ -11,6 +11,8 @@ let url={
 url=rap(url)
 import Slide from 'components/slide/slide.vue'
 import Top from 'components/top/top.vue'
+import Foot from 'components/foot/foot.vue'
+import Search from 'components/search/search.vue'
 new Vue({
   el: '#body',
   data:{
@@ -61,7 +63,9 @@ new Vue({
   },
      components:{
       Slide,
-      Top
+      Top,
+      Foot,
+      Search
     }
 
 })
