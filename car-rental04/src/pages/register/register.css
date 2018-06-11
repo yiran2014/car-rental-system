@@ -1,0 +1,93 @@
+.register {
+  width: 650px;
+  height: 418px;
+  margin: 0 auto;
+  padding-top: 100px;
+  background-color: #fff;
+}
+
+.register-import dl {
+  overflow: hidden;
+  margin-bottom: 17px;
+}
+
+.register-import dl dt {
+  float: left;
+  width: 100px;
+  line-height: 32px;
+  text-align: left;
+}
+
+.register-import dl dd {
+  float: left;
+  margin-left: 10px;
+}
+
+.register-import dl input {
+  height: 24px;
+  width: 332px;
+  padding: 3px 10px;
+  border: 1px solid #eaeaea;
+}
+
+.register-import dl span {
+  display: block;
+  height: 32px;
+  width: 90px;
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  line-height: 32px;
+  background-color: #c4c4c4;
+  cursor: pointer;
+}
+
+
+.register-import .validate_msg {
+  padding-left: 110px;
+  font-size: 14px;
+  color: #f00;
+}
+
+
+
+
+
+.register-success .register-success-msg {
+  overflow: hidden;
+  text-align: center;
+}
+
+
+.register-success {
+  width: 420px;
+  margin: 0 auto;
+}
+
+.register-success .register-success-msg i {
+  float: left;
+  font-size: 60px;
+  line-height: 65px;
+  color: #ff7200;
+  margin-top: 35px;
+}
+
+.register-success .register-success-msg p {
+  float: left;
+  padding-left: 30px;
+  font-size: 35px;
+  line-height: 65px;
+}
+
+
+.btn {
+  display: block;
+  height: 36px;
+  width: 88px;
+  margin: 60px auto 0;
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #ff7200;
+}

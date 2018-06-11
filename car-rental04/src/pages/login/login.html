@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta>
+    <title>登录</title>
+  </head>
+
+  <body>
+    <div>
+      头部
+    </div>
+    <div class="login-content">
+      <div class="main-content-w">
+        <div class="content-title">
+          <i class="logo-red"></i>
+          <p>溧阳挖掘机租赁服务公司</p>
+        </div>
+        <!-- 整个登录系统 start-->
+        <div class="login-content-box">
+          <h3 class="login-box-title">登&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;录</h3>
+          <div class="login-box-msg" id="loginBoxMsg">
+            <!-- 手机号输入区 -->
+            <div class="login-box-msg-common login-box-msg-tel">
+              <i class="icon-id"></i>
+              <input type="tel" placeholder="请输入已验证手机号" v-bind:value="phone" v-on:input="inputPhone($event)" @blur="validatePhone">
+            </div>
+            <p class="validate_msg">{{phoneMsg}}</p>
+            <!-- 密码输入区 -->
+            <div class="login-box-msg-common login-box-msg-pwd">
+              <i class="icon-key"></i>
+              <input type="text" placeholder="请输入密码" v-model="pwd" @blur="validatePwd">
+            </div>
+            <p class="validate_msg">{{pwdMsg}}</p>
+            <!-- 登录区、立即注册区、忘记密码区 -->
+            <div class="login-btn-box">
+              <button class="btn" @click="login"> 登&nbsp;&nbsp;&nbsp;&nbsp;录</button>
+              <div class="login-fail">
+                <a href="register.html">立即注册</a>
+                <a href="forgetPwd.html">忘记密码</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 整个登录系统 end-->
+      </div>
+    </div>
+    <div>
+      底部
+    </div>
+  </body>
+
+</html>
